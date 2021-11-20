@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Recipe from "./component/recipe";
+import Search from "./component/search";
+import { useState } from "react";
 
 function App() {
+
+  const [recipe, setRecipe] = useState([]);
+
+   const searchRecipe = async(e) =>{
+     e.preventDefault();
+    const recipeName = e.target.elements.recipeName.value;
+     const api = await fetch('https://forkify-api.herokuapp.com/api/search?q=pizza');
+     const data = await api.json();
+     setRecipe(data.recipes)
+     console.log(recipe)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search getRecipe ={searchRecipe}/>
+      <Recipe handleRecipe ={recipe}/>
     </div>
   );
 }
