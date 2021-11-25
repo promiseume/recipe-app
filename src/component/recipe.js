@@ -1,18 +1,24 @@
 import React from 'react'
+import {  useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
-export default function Recipe({handleRecipe}) {
+export default function Recipe() {
+    const [fullRecipe, setFullRecipe] = useState([])
+
+    let { id } = useParams();
+    useEffect(() => {
+        fetch(`https://forkify-api.herokuapp.com/api/get?rId=${id}`)
+        .then(res => {
+           return res.json()
+        })
+        .then(data => (
+           setFullRecipe(data.recipe)
+        ))
+    },[id])
     return (
-        <div className='container'>
-            <div className='row'>
-          {
-            handleRecipe.map((recipess) => <div key={recipess.title}>
-            <img src={recipess.image_url} alt={recipess.title}/>
-            <h1>{recipess.title}</h1>
-            <p>{recipess.publisher}</p>
-            </div>)
-          }  
-          <button>view recipe</button>
-        </div>
+        <div>
+           <h2>{fullRecipe.title}</h2>
+           <img src={fullRecipe.image_url}></img>
         </div>
     )
 }

@@ -1,6 +1,8 @@
-import Recipe from "./component/recipe";
+import Recipes from "./component/recipes";
 import Search from "./component/search";
+import Recipe from "./component/recipe"
 import { useState } from "react";
+
 
 function App() {
 
@@ -12,14 +14,14 @@ function App() {
      const api = await fetch(`https://forkify-api.herokuapp.com/api/search?q=${recipeName}`);
      const data = await api.json();
      setRecipe(data.recipes)
-     console.log(recipe)
   }
 
   return (
     <div className="App">
       <Search getRecipe ={searchRecipe}/>
-      <Recipe handleRecipe ={recipe}/>
+      <Recipes handleRecipe ={recipe}/>
     </div>
+
   );
 }
 
