@@ -125,7 +125,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-top: 120px;
   background-color: rgb(248, 246, 246);
 }
-.example button{
+.popular-button{
   background-color: #e8eeea;
   border: none;
   color: #42f56c;
@@ -138,4 +138,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+  margin-left: 220px;
+  margin-bottom: 15px;
+}
+.footer{
+  background-color:#42f56c ;
+  color: #fff;
+  display: flex;
+  margin-bottom: 0px;
 }

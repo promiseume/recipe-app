@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Search({handleSearch}) {
+export default function Nav() {
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -18,7 +19,8 @@ export default function Search({handleSearch}) {
           <a class="nav-link active" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Recipe</a>
+          {/* <a class="nav-link active" href="#">Recipe</a> */}
+          <Link to="/recipes"> Recipes </Link>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Contact</a>
@@ -30,8 +32,3 @@ export default function Search({handleSearch}) {
 </nav>
     )
 }
-
-{/* <form onSubmit={getRecipe} class="d-flex">
-        <input class="form-control me-2" type="search" placeholder='search for a recipe' type='text' name='recipeName'/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> */}
