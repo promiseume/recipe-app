@@ -16,9 +16,13 @@ export default function Recipe() {
         ))
     },[id])
     return (
-        <div>
+        <div className='single-recipe-page'>
+            <>
            <h2>{fullRecipe.title}</h2>
            <img src={fullRecipe.image_url}></img>
+           <p>{fullRecipe.publisher}</p>
+           <a href={fullRecipe.source_url}>View Recipe</a>
+           </>
         </div>
     )
 }

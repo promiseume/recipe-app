@@ -21,7 +21,6 @@ export default function Recipepage() {
   }
     return (
         <div>
-            <h1>hi</h1>
            <Search getRecipe ={searchRecipe}/> 
            <Recipes handleRecipe ={recipe}/>
         </div>

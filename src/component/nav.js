@@ -16,14 +16,13 @@ export default function Nav() {
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">About</a>
+          <a class="nav-link active" href="#about">About</a>
         </li>
         <li class="nav-item">
-          {/* <a class="nav-link active" href="#">Recipe</a> */}
-          <Link to="/recipes"> Recipes </Link>
+      <Link to="/recipes"><h4 class="nav-link active">Recipe</h4> </Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Contact</a>
+          <a class="nav-link active" href="#footer">Contact</a>
         </li>
       </ul>
       </div>
