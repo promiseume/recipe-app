@@ -1,5 +1,5 @@
 
-import Landingpage from "./component/landingpage";
+import Landingpage from "./component/landingPage/landingpage";
 function App() {
   return (
     <div className="App">

@@ -1,7 +1,7 @@
 import React from 'react'
-import spaghetti from '../images/spaghetti.jpg'
-import salat from '../images/salat.jpg'
-import pancake from '../images/pancake.jpg'
+import spaghetti from '../../images/spaghetti.jpg'
+import salat from '../../images/salat.jpg'
+import pancake from '../../images/pancake.jpg'
 export default function Popular() {
     return (
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

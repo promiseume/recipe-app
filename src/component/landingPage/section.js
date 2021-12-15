@@ -1,13 +1,13 @@
 import React from 'react'
-import noodles from '../images/noodles.jpg'
-import cake from '../images/cake.jpg'
-import fruitsalad from '../images/fruitsalad.jpg'
-import burger from '../images/burger.jpg'
-import meat from '../images/meat.jpg'
-import meatball from '../images/meatball.jpg'
-import pancake from '../images/pancakes.jpg'
-import pizza from '../images/pizza.jpg'
-import spaghetti from '../images/spaghetti.jpg'
+import noodles from '../../images/noodles.jpg'
+import cake from '../../images/cake.jpg'
+import fruitsalad from '../../images/fruitsalad.jpg'
+import burger from '../../images/burger.jpg'
+import meat from '../../images/meat.jpg'
+import meatball from '../../images/meatball.jpg'
+import pancake from '../../images/pancakes.jpg'
+import pizza from '../../images/pizza.jpg'
+import spaghetti from '../../images/spaghetti.jpg'
 
 export default function Section() {
     return (
