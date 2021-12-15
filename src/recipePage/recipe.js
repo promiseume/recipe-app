@@ -17,12 +17,12 @@ export default function Recipe() {
     },[id])
     return (
         <div className='single-recipe-page'>
-            <>
-           <h2>{fullRecipe.title}</h2>
+            <div>
+           <h1>{fullRecipe.title}</h1>
            <img src={fullRecipe.image_url}></img>
-           <p>{fullRecipe.publisher}</p>
-           <a href={fullRecipe.source_url}>View Recipe</a>
-           </>
+           <p> Publisher: {fullRecipe.publisher}</p>
+           <a href= {fullRecipe.source_url}>See Preparation Method</a>
+           </div>
         </div>
     )
 }

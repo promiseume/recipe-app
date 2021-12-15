@@ -10,9 +10,6 @@ body{
 .navbar-brand h3 span{
   color: #42f56c;
 }
-.container{
-  display: flex;
-}
 .header{
   background-color: rgb(248, 246, 246);
   display: flex;
@@ -186,5 +183,48 @@ input[type=text]{
 }
 .recipe-page{
   background-color:#e8eeea ;
-  margin: 3px;
+  width:100% ;
+}
+.container{
+  display: flex;
+  padding: 40px;
+}
+.row{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+}
+.row img{
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+}
+.row h3{
+  font-size: 1.7rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.single-recipe-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.single-recipe-page p{
+  font-size: 2rem;
+}
+.single-recipe-page h1{
+  font-weight: bold;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.single-recipe-page img{
+ border-radius: 2px;
 }

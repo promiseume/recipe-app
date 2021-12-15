@@ -8,8 +8,7 @@ export default function Recipes({handleRecipe,handleError}) {
           { 
             handleRecipe.map((recipess) => <div key={recipess.title}>
             <img src={recipess.image_url} alt={recipess.title}/>
-            <h1>{recipess.title.length < 23 ? `${recipess.title}` : `${recipess.title.substring(0, 30)}...`}</h1>
-            <p>{recipess.publisher}</p>
+            <h3>{recipess.title.length < 20 ? `${recipess.title}` : `${recipess.title.substring(0, 20)}...`}</h3>
             <button>
               <Link to={{pathname: `/menu/${recipess.recipe_id}`}}>
               View Recipe</Link>
