@@ -19,7 +19,7 @@ export default function Nav() {
           <a class="nav-link active" href="#about">About</a>
         </li>
         <li class="nav-item">
-      <Link to="/recipes"><h4 class="nav-link active">Recipe</h4> </Link>
+      <Link to="/recipes" style={{ textDecoration: 'none'}}><h4 class="nav-link active">Recipe</h4> </Link>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#footer">Contact</a>

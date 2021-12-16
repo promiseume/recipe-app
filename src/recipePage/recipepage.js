@@ -1,6 +1,7 @@
 import React from 'react'
 import Recipes from "./recipes";
 import Search from './search';
+import './recipePage.css'
 import { useState, useEffect } from "react";
 
 export default function Recipepage() {
