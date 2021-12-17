@@ -8,6 +8,17 @@ export default function Recipepage() {
   const [recipe, setRecipe] = useState([]);
   const [error, setError] = useState('');
 
+  useEffect(() =>{
+    const savedRecipe = JSON.parse(localStorage.getItem('react-recipe-app'));
+    if(savedRecipe){
+      setRecipe(savedRecipe)
+    }
+  },[])
+  
+    useEffect(() =>{
+      localStorage.setItem('react-recipe-app', JSON.stringify(recipe));
+    },[recipe])
+
    const searchRecipe = async(e) =>{
      e.preventDefault();
     const recipeName = e.target.elements.recipeName.value;

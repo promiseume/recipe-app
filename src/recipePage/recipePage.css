@@ -28,6 +28,7 @@ input[type=text]{
     grid-column-gap: 5px;
     grid-row-gap: 10px;
     background-color: #e8eeea;
+    justify-content: center;
     padding: 10px;
   }
   .row img{
@@ -62,6 +63,9 @@ input[type=text]{
   }
   .single-recipe-page img{
    border-radius: 2px;
+  }
+  .recipe-page{
+      text-align: center;
   }
   @media(max-width: 480px){
     .row{
