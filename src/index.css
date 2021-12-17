@@ -1,4 +1,4 @@
 body{
   background-color: rgb(238, 237, 237);
-  touch-action: none;
+  overflow-x: hidden;
 }

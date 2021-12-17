@@ -4,6 +4,7 @@ input[type=text]{
     border: 1px solid #42f56c;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
   }
   .search button{
     background-color: #4CAF50;
@@ -20,7 +21,6 @@ input[type=text]{
   }
   .recipe-page{
     background-color:#e8eeea ;
-    width:100% ;
   }
   .row{
     display: grid;
@@ -63,3 +63,26 @@ input[type=text]{
   .single-recipe-page img{
    border-radius: 2px;
   }
+  @media(max-width: 480px){
+    .row{
+        display: flex;
+    }  
+    .single-recipe-page{
+        display: flex;
+        justify-content: center;
+    }
+    .single-recipe-page h1{
+        padding: 3px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .single-recipe-page p{
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 3px;
+      }
+  }
+  
+  
