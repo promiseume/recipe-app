@@ -98,9 +98,16 @@ input[type="text"] {
 .errorMessage {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
   color: #fff;
-  background-color: #e8eeea;
+  width: 50%;
+  margin: auto;
+  height: 40vh;
+  padding: 10px;
+  background-color:#4caf50 ;
+  
 }
 @media (max-width: 480px) {
   .row {
@@ -122,5 +129,19 @@ input[type="text"] {
     text-align: center;
     font-size: 1.8rem;
     padding: 3px;
+  }
+  .errorMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    width: auto ;
+    margin: 0px;
+    height: 30vh;
+    padding: 10px;
+    background-color:#42f56c;
+    
   }
 }
