@@ -29,8 +29,8 @@ export default function Recipepage() {
       const data = await api.json();
       if (data.error) {
         setError(
-          `Sorry,We couldn't find a ${recipeName} Recipe.
-          Try searching for Another Recipe`
+          `Sorry,We Couldn't Find A ${recipeName} Recipe.
+          Try Searching For Another Recipe`
         );
       } else {
         setRecipe(data.recipes);

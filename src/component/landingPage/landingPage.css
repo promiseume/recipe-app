@@ -32,11 +32,6 @@
   font-size: 1rem;
 }
 .header-div {
-  /* position: absolute;
-     left: 65%;
-     top: -25%;
-     height: 7em;
-     z-index: 6; */
   text-align: center;
   background-color: #fff;
   width: 100px;
@@ -86,6 +81,7 @@
 .navbar-nav .nav-item a {
   font-size: 1rem;
   font-weight: bold;
+  transition: .4s;
 }
 .navbar-nav .nav-item h4 {
   font-size: 1rem;
@@ -93,9 +89,14 @@
   text-decoration: none;
   padding-top: 10px;
 }
-.nav-item .nav-link a:hover {
+.nav-item:hover {
+  color:#42f56c;
+  font-size: 1.2rem;
+}
+.navbar .collapse .d-flex .navbar-nav .nav-item .nav-link:hover{
+  color:#42f56c;
+  font-size: 1.1rem;
   text-decoration: underline;
-  color: #42f56c;
 }
 .example {
   display: flex;
@@ -152,15 +153,16 @@
   margin-top: 0px;
   padding: 10px;
 }
-.footer h3 {
-  font-size: 1.2rem;
+.footer h5 {
+  font-size: 1rem;
   color: #212529;
   padding-top: 10px;
+  padding-left: 30px;
 }
 .footer span a {
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: #212529;
-  padding: 15px;
+  padding: 10px;
 }
 
 @media (max-width: 480px) {

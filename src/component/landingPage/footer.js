@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div id="footer" className="footer">
       <>
-        <h3>Copyright @ Promise 2021,All right reserved</h3>
+        <h5>Copyright @ Promise 2021, All right reserved</h5>
       </>
       <span>
         <a href="https://twitter.com/ume_ngozi">
