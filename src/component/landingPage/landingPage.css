@@ -12,11 +12,12 @@
   justify-content: space-between;
   height: 60vh;
   padding-top: 80px;
-  padding-left: 120px;
+  padding-left: 220px;
+  padding-bottom: 30px;
   padding-right: 120px;
 }
 .header .header-img img {
-  height: 98%;
+  height: 100%;
   max-width: 100%;
   object-fit: cover;
   border-radius: 5px;
@@ -29,7 +30,8 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .header-text p {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  padding: 5px;
 }
 .header-div {
   text-align: center;
@@ -53,6 +55,7 @@
 .images {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   padding: 20px;
   padding-left: 120px;
   padding-right: 120px;
@@ -72,7 +75,7 @@
   padding-right: 20px;
 }
 .d-flex {
-  padding-left: 600px;
+  padding-left: 670px;
 }
 .navbar-nav .nav-item {
   padding-left: 30px;
@@ -157,7 +160,10 @@
   font-size: 1rem;
   color: #212529;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 60px;
+}
+.footer span{
+  padding-right: 40px;
 }
 .footer span a {
   font-size: 1.3rem;
@@ -231,5 +237,11 @@
   }
   .footer span a {
     padding: 3px;
+  }
+  .footer h5 {
+    font-size: 1rem;
+    color: #212529;
+    padding-top: 10px;
+    padding-left: 20px;
   }
 }

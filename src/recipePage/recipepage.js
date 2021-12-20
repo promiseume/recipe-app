@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export default function Recipepage() {
   const [recipe, setRecipe] = useState([]);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
 
   useEffect(() => {
     const savedRecipe = JSON.parse(localStorage.getItem("react-recipe-app"));

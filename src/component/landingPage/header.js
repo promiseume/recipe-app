@@ -11,7 +11,7 @@ export default function Header() {
         </h3>
         <p>
           Want to make a dish but don't know where to start?
-          <br /> No need to worry again!
+          <br /> No need to worry!
         </p>
       </div>
       <div className="header-img">
