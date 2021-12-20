@@ -54,6 +54,7 @@
 }
 .images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   padding: 20px;
@@ -65,6 +66,11 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  transition: all ease 500ms;
+}
+.images img:hover{
+  transform: scale(1.25);
+  opacity: 0.7;
 }
 .nav-list {
   display: flex;
