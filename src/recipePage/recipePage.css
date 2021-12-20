@@ -109,6 +109,12 @@ input[type="text"] {
   background-color:#4caf50 ;
   
 }
+.single-recipe-page-content{
+  text-align: center;
+}
+.single-recipe-page img{
+  text-align: center;
+}
 @media (max-width: 480px) {
   .row {
     display: flex;
@@ -142,6 +148,12 @@ input[type="text"] {
     height: 30vh;
     padding: 10px;
     background-color:#42f56c;
+    
+  }
+  .links a {
+    padding: 13px;
+    padding-left: 60px;
+    padding-right: 45px;
     
   }
 }

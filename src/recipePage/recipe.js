@@ -16,9 +16,11 @@ export default function Recipe() {
   return (
     <div className="single-recipe-page">
       <div>
+      <section className='single-recipe-page-content'>
         <h1>{fullRecipe.title}</h1>
         <img src={fullRecipe.image_url}></img>
         <p> Publisher: {fullRecipe.publisher}</p>
+        </section>
         <div className="links">
           <a href={fullRecipe.source_url}>See Preparation Method</a>
           <button className="return-button">
