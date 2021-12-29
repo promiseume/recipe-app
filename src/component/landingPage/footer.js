@@ -19,7 +19,7 @@ export default function Footer() {
         <a href="https://github.com/promiseume">
           <FaGithubSquare />
         </a>
-        <a href="https://discord.com/channels/@me/897255829202411540/918530151061549137">
+        <a href="https://www.linkedin.com/in/ngozi-ume-5707561b3">
           <FaLinkedinIn />
         </a>
       </span>
