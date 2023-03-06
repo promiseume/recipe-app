@@ -31,11 +31,13 @@ export default function Popular() {
           aria-label="Slide 3"
         ></button>
       </div>
+      <div className="carousel-button">
       <button className="popular-button">popular menu</button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div className="example">
-            <div>
+            <div className='food-info'>
               <h1>Italian Pasta</h1>
               <p>
                 Nothing better on a rainy afternoon than
@@ -46,13 +48,13 @@ export default function Popular() {
               <p>30 min</p>
             </div>
             <div className="popular-img">
-              <img src={spaghetti} />
+              <img src={spaghetti} alt={'sphaghetti-image'} />
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div className="example">
-            <div>
+            <div className='food-info'>
               <h1>Pancakes</h1>
               <p>
                 Pancakes are one of the best meal <br /> you can have for
@@ -64,13 +66,13 @@ export default function Popular() {
               <p>30 min</p>
             </div>
             <div className="popular-img">
-              <img src={pancake} />
+              <img src={pancake} alt={'pancake image'} />
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div className="example">
-            <div>
+            <div className='food-info'>
               <h1>Salad</h1>
               <p>
                 This beautiful yet nutritious salad was made with
@@ -81,7 +83,7 @@ export default function Popular() {
               <p>25 min</p>
             </div>
             <div className="popular-img">
-              <img src={salat} />
+              <img src={salat} alt={'salad image'}/>
             </div>
           </div>
         </div>

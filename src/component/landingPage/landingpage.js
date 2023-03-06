@@ -7,12 +7,14 @@ import Footer from "./footer";
 import "./landingPage.css";
 export default function Landingpage() {
   return (
-    <div>
+    <>
       <Nav />
+      <div className='landing-page'>
       <Header />
       <Section />
       <Popular />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }

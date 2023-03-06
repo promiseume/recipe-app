@@ -6,39 +6,45 @@
 .navbar-brand h3 span {
   color: #42f56c;
 }
+.landing-page {
+  margin:0 auto;
+  width: 100%;
+}
 .header {
   background-color: rgb(248, 246, 246);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 60vh;
-  padding-top: 80px;
-  padding-left: 220px;
-  padding-bottom: 30px;
-  padding-right: 120px;
+  height: 50vh;
+  width: 100%;
+  padding: 20px;
+}
+.header-img {
+  width: 60%;
+  height: 100%;
+  padding: 20px;
 }
 .header .header-img img {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.header-text {
+  width: 40%;
+  padding: 20px;
+}
 .header-text h3 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.7rem;
+  font-weight: 700;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .header-text p {
-  font-size: 1.1rem;
-  padding: 5px;
+  font-size: 1.3rem;
 }
-.header-div {
-  text-align: center;
-  background-color: #fff;
-  width: 100px;
-  padding: 5px;
-}
+
 .section {
   text-align: center;
   padding: 30px;
@@ -54,12 +60,9 @@
 }
 .images {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   padding: 20px;
-  padding-left: 120px;
-  padding-right: 120px;
 }
 .images img {
   border: 9px solid #ffff;
@@ -68,7 +71,7 @@
   border-radius: 50%;
   transition: all ease 500ms;
 }
-.images img:hover{
+.images img:hover {
   transform: scale(1.25);
   opacity: 0.7;
 }
@@ -90,7 +93,7 @@
 .navbar-nav .nav-item a {
   font-size: 1rem;
   font-weight: bold;
-  transition: .4s;
+  transition: 0.4s;
 }
 .navbar-nav .nav-item h4 {
   font-size: 1rem;
@@ -99,22 +102,27 @@
   padding-top: 10px;
 }
 .nav-item:hover {
-  color:#42f56c;
+  color: #42f56c;
   font-size: 1.2rem;
 }
-.navbar .collapse .d-flex .navbar-nav .nav-item .nav-link:hover{
-  color:#42f56c;
+.navbar .collapse .d-flex .navbar-nav .nav-item .nav-link:hover {
+  color: #42f56c;
   font-size: 1.1rem;
   text-decoration: underline;
 }
 .example {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 70vh;
+  width: 100%;
 }
 .example h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.food-info {
+  width: 30%;
 }
 .example p {
   font-weight: 300;
@@ -123,36 +131,33 @@
 }
 .popular-img {
   background-color: rgb(238, 237, 237);
-  border-radius: 50%;
-  padding-left: 85px;
-  padding-right: 75px;
+  width: 40%;
 }
 .popular-img img {
   height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30%;
 }
 #carouselExampleIndicators {
   height: 105vh;
   padding-top: 120px;
   background-color: rgb(248, 246, 246);
 }
+.carousel-button {
+  padding: 2rem 0 2rem 16rem;
+}
 .popular-button {
   background-color: #e8eeea;
   border: none;
   color: #42f56c;
   padding: 3px 5px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
-  margin-left: 220px;
-  margin-bottom: 15px;
 }
 .footer {
   background-color: #42f56c;
@@ -168,7 +173,7 @@
   padding-top: 10px;
   padding-left: 60px;
 }
-.footer span{
+.footer span {
   padding-right: 40px;
 }
 .footer span a {
